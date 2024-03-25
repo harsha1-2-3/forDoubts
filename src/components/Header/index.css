@@ -1,0 +1,120 @@
+* {
+  font-family: Roboto;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.bgHeaderCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logoLogoutCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.homeLogoImg {
+  height: 30px;
+  width: 130px;
+}
+
+.logoutBtnSm {
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.logoutImg {
+  height: 30px;
+  width: 30px;
+}
+
+.optionsContSm {
+  background-color: #e6f6ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0px;
+  padding: 10px;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.optionSm {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.optionSmImg {
+  height: 25px;
+  width: 25px;
+}
+
+.optionsContLg {
+  list-style-type: none;
+  padding-left: 0px;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optionLg {
+  text-decoration: none;
+  background-color: transparent;
+  color: #64748b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logoutBtnLg {
+  background-color: #0967d2;
+  color: white;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .logoutBtnSm {
+    display: none;
+  }
+
+  .optionsContSm {
+    display: none;
+  }
+
+  .bgHeaderCont {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .optionsContLg {
+    display: none;
+    width: 45%;
+  }
+
+  .logoutBtnLg {
+    width: 80px;
+  }
+
+  .homeLogoImg {
+    height: 40px;
+    width: 155px;
+  }
+}

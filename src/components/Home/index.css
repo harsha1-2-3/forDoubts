@@ -1,0 +1,168 @@
+* {
+  font-family: Roboto;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+.headNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.optionsContLg {
+  list-style-type: none;
+  padding-left: 0px;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optionLg {
+  text-decoration: none;
+  background-color: transparent;
+  color: #64748b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logoutBtnLg {
+  background-color: #0967d2;
+  color: white;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+}
+
+.bgHomeCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.homeCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+
+.imgTextBtnCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeHead {
+  color: #1e293b;
+  font-size: 33px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+  margin-top: 8px;
+}
+
+.homeImgSm {
+  height: 160px;
+  width: 160px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.homePara {
+  color: #64748b;
+  font-size: 15px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.homeShopBtn {
+  background-color: #0967d2;
+  color: white;
+  height: 40px;
+  width: 220px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: 0px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.homeImgLg {
+  display: none;
+  height: 100px;
+  width: 100px;
+}
+
+@media (min-width: 768px) {
+  .headNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .homeCont {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .optionsContLg {
+    display: flex;
+  }
+  .homeImgSm {
+    display: none;
+  }
+
+  .homeImgLg {
+    display: flex;
+    height: 300px;
+    width: 300px;
+  }
+  .imgTextLg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .imgTextBtnCont {
+    align-items: flex-start;
+    margin-right: 40px;
+  }
+
+  .homeHead {
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .homePara {
+    text-align: left;
+    line-height: 20px;
+    font-size: 13px;
+  }
+
+  .homeShopBtn {
+    width: 130px;
+  }
+}
+
+@media (min-width: 992px) {
+  .homeHead {
+    font-size: 35px;
+  }
+
+  .homePara {
+    font-size: 16px;
+  }
+
+  .imgTextBtnCont {
+    margin-right: 50px;
+  }
+}
